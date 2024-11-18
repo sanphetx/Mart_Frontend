@@ -1,0 +1,8 @@
+.btn-dark {
+    background-color: transparent; /* เปลี่ยนสีพื้นหลังเป็นโปร่งใส */
+    border-color: transparent; /* ลบเส้นขอบ */
+    color: #000; /* เปลี่ยนสีตัวอักษรเป็นสีดำ */
+    text-decoration: none; /* ลบขีดที่อยู่ใต้ข้อความ */
+    display: block; /* ให้ปุ่มเต็มความกว้างของพื้นที่ที่มี */
+    width: 100%; /* กำหนดความกว้างเป็น 100% */
+  }

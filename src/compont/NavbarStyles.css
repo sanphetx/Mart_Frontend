@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+.card {
+  position: relative;
+  z-index: 1;
+  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Titillium Web", sans-serif; 
+  
+}
+
+:root {
+  --mainColor: #00bcd4 ;
+  --mainColorLight: #5767aa;
+  --secondaryColor: #9292D1;
+  --textColor: #000000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 120px;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  
+  
+  }
+  
+  nav a {
+  margin-right: 2rem;
+  color: var(--textColor);
+  text-decoration: none;
+  }
+  
+  nav a:last-child {
+  margin-right: 0;
+  }
+  
+  .logo img {
+  height: 100px;
+  margin-right: 1rem;
+  order: -1;
+  }
+  
+  nav a:hover {
+  color: var(--secondaryColor);
+  }
+  
+  header .nav-btn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 1.8rem;
+  }
+  
+  header div,
+  nav {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 1.5rem;
+  
+  }
+
+@media only screen and (max-width: 1024px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	header nav {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+    
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+    
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	nav a {
+		font-size: 1.5rem;
+	}
+  
+}
+   .table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .table th,
+  .table td {
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .table img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  #H1 {
+    font-size: 0.8cm;
+    margin-left: 60px; /* เลื่อนไปทางซ้าย */
+    margin-top: 50px;
+    position: absolute; /* ตั้งให้อยู่ในตำแหน่งแนวนอน */
+    top: 0; /* ตั้งเป็นจุดเริ่มต้นที่บริเวณด้านบนของ container */
+    left: 80px; /* ตั้งตำแหน่งซ้ายของ container */
+    color: #000000;
+    
+  }
+  
+  #h3 {
+    text-align: center;
+  }
+  
